@@ -1,3 +1,24 @@
 .task-form {
-  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+.task-form-input {
+  background-color: #31363c;
+  color: whitesmoke;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  flex-grow: 2;
+  margin-right: 0.5rem;
+}
+
+.task-form > button {
+  background-color: whitesmoke;
+  color: #31363c;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
 }

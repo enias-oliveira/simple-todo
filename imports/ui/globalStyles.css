@@ -1,0 +1,40 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #c91a55;
+  align-items: center;
+  justify-content: start;
+}
+
+.app-header {
+  color: #f0ffff;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  width: 80vw;
+  overflow: auto;
+  background: #3c424a;
+  color: #f0ffff;
+  border-radius: 0.5rem;
+  margin: 0 0 5rem 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}

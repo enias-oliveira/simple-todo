@@ -1,17 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { FaTrashAlt } from 'react-icons/fa'
+
+import './styles.css'
+
 const Task = ({ task, onCheckboxClick, onDeleteClick }) => {
   return (
-    <li>
+    <li className="task">
       <input
+        className="checkbox"
         type="checkbox"
         checked={!!task.isChecked}
         onClick={() => onCheckboxClick(task)}
         readOnly
       />
-      <span>{task.text}</span>
-      <button onClick={() => onDeleteClick(task)}>&times;</button>
+      <label>{task.text}</label>
+      <button onClick={() => onDeleteClick(task)}>
+        <FaTrashAlt />
+      </button>
     </li>
   )
 }
@@ -23,6 +30,7 @@ Task.propTypes = {
     isChecked: PropTypes.bool,
   }),
   onCheckboxClick: PropTypes.func,
+  onDeleteClick: PropTypes.func,
 }
 
 export default Task

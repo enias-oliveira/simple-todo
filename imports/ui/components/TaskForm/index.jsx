@@ -23,6 +23,7 @@ const TaskForm = () => {
   return (
     <form className="task-form" onSubmit={handleSubmit}>
       <input
+        className="task-form-input"
         value={text}
         onChange={(e) => setText(e.target.value)}
         type="text"
